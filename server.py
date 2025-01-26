@@ -1,9 +1,9 @@
 import socket
 import threading
-
+import time
 
 def handle_client(client_socket, client_address):
-    print(f"[NEW CONNECTION] {client_address} connected.")
+    print(f"[NEW CONNECTION] {client_address} connected at {time.ctime()}.")
     while True:
         try:
             message = client_socket.recv(1024).decode('utf-8')
