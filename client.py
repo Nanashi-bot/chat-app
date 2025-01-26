@@ -13,7 +13,7 @@ def receive_messages(client_socket):
             break
 
 server_ip = input("Enter server IP: ")
-server_port = 12345
+server_port = 8080
 
 client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 client.connect((server_ip, server_port))

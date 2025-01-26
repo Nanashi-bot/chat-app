@@ -28,7 +28,7 @@ def broadcast(message, sender_socket):
 
 
 server_ip = "0.0.0.0"  # Bind to all interfaces
-server_port = 12345
+server_port = 8080
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 #server.bind((server_ip, server_port))
 server.bind(('', server_port))
