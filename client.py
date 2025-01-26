@@ -35,4 +35,5 @@ while True:
 
 
 print("exiting")
-sys.exit(0)
+sys.exit()
+
