@@ -19,8 +19,9 @@ def socket_connect(server_ip, user):
     client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     client.connect((server_ip, server_port))
     client.send(f"{user} has joined the chat!".encode('utf-8'))
-    print("Type quit to leave the chat")
+    #print("Type quit to leave the chat")
     return client
+    irint("Type quit to leave the chat")
 
 
 # Switch from IP entry to chat
@@ -79,7 +80,7 @@ def send_message():
     if messg != "":
         try:
             client.send(f"{user}: {messg}".encode('utf-8'))
-            print("Message is: ", messg)
+            #print("Message is: ", messg)
             update_display(f"You: {messg}")
             messg_var.set("")  # Clear the input field
         except:
