@@ -71,6 +71,10 @@ chmod +x ./linuxclient
 
 If you want to change the server's IP or port, modify the necessary lines in `client.py`, `server.py`, or the GUI clients as needed.
 
+### Screenshot
+
+![Screenshot on Windows](./images/screenshot.jpeg)
+
 ## Example Usage
 
 1. Start the server:
