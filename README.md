@@ -1,14 +1,14 @@
 # TCP Chat App
 This repository contains a simple server-client communication setup. The server is implemented in Python using `server.py`, while the client is available in multiple formats:
 - A Python script (`client.py`) for command-line interaction.
-- A GUI client for Linux (`./client`), implemented in Python via `gui.py`.
+- A GUI client for Linux (`./linuxclient`), implemented in Python via `gui.py`.
 - A compiled executable for Windows (`windowsclient.exe`).
 
 ## File Overview
 - `server.py`: The server-side Python script that listens for incoming connections on port 8080. It processes requests from clients and sends responses back.
 - `client.py`: A command-line Python script that allows users to connect to the server by providing the server's IP address.
 - `windowsclient.exe`: A compiled executable for Windows users who prefer a GUI client.
-- `./client`: The Linux GUI client, runnable from the terminal.
+- `./linuxclient`: The Linux GUI client, runnable from the terminal.
 - `gui.py`: The Python script that powers the Linux GUI client.
 
 ## Setup Instructions
@@ -55,23 +55,17 @@ python client.py
 2. The GUI will prompt you for the server's IP address.
 3. Enter the server's IP (e.g., `127.0.0.1` for localhost or the EC2 instance's public IP), and the client will connect to the server.
 
-#### Option 3: Using `./client` (Linux GUI)
+#### Option 3: Using `./linuxclient` (Linux GUI)
 
 1. Open a terminal in the repository directory.
 2. Make sure the file has execution permissions:
 
 ```
-chmod +x ./client
+chmod +x ./linuxclient
 ```
 
-3. Run the GUI client:
-
-```
-./client
-```
-
-4. The GUI will prompt you for the server's IP address.
-5. Enter the server's IP (e.g., `127.0.0.1` for localhost or the EC2 instance's public IP), and the client will connect to the server.
+3. You will be prompted for the server's IP address.
+4. Enter the server's IP (e.g., `127.0.0.1` for localhost or the EC2 instance's public IP), and the client will connect to the server.
 
 ### 3. Modifying the Server IP/Port (Optional)
 
@@ -90,6 +84,7 @@ python server.py
 ```
 python client.py
 ```
+Or run the gui client for your respective operating system
 
 3. Enter the server's IP address when prompted.
 
@@ -97,7 +92,7 @@ python client.py
 
 - Python 3.x for `server.py` and `client.py`.
 - Windows users can use `windowsclient.exe` without needing Python.
-- Linux users can use the GUI client `./client`.
+- Linux users can use the GUI client `./linuxclient`.
 
 ## Troubleshooting
 
